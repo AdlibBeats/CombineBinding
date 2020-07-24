@@ -1,0 +1,16 @@
+PODS:
+  - CombineBinding (0.1.0)
+
+DEPENDENCIES:
+  - CombineBinding (from `../`)
+
+EXTERNAL SOURCES:
+  CombineBinding:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  CombineBinding: 1ed61eba756a6e0def1ca7b5615103069afe349e
+
+PODFILE CHECKSUM: a873e31ed53e724a44ea270ed347f37b59311413
+
+COCOAPODS: 1.9.3
