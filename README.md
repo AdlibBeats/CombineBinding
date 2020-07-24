@@ -22,7 +22,7 @@ pod 'CombineBinding'
 
 ## Author
 
-adlibbeats@icloud.com, avasilyev@mobiledimension.ru
+adlibbeats@icloud.com
 
 ## License
 
