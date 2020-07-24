@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'CombineBinding_Example' do
+  pod 'CombineBinding', :path => '../'
+
+  target 'CombineBinding_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
