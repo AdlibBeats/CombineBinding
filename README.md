@@ -9,15 +9,25 @@
 
 To run the example project, clone the repo, and run `pod install` from the Example directory first.
 
+## Usage
+
+Sooner or later we had to know for sure
+
 ## Requirements
+
+* Xcode 11.x
+* iOS 13.x
+* Swift 5.x
 
 ## Installation
 
-CombineBinding is available through [CocoaPods](https://cocoapods.org). To install
-it, simply add the following line to your Podfile:
-
 ```ruby
-pod 'CombineBinding'
+# Podfile
+use_frameworks!
+
+target 'YOUR_TARGET_NAME' do
+    pod 'CombineBinding'
+end
 ```
 
 ## Author
