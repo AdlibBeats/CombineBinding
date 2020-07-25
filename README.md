@@ -5,7 +5,7 @@
 [![License](https://img.shields.io/cocoapods/l/CombineBinding.svg?style=flat)](https://cocoapods.org/pods/CombineBinding)
 [![Platform](https://img.shields.io/cocoapods/p/CombineBinding.svg?style=flat)](https://cocoapods.org/pods/CombineBinding)
 
-CombineBinding provides `~>` and `~` operators for data binding using Combine, to replace the `sink(receiveValue:)` and `store(in:)` method in RxSwift.
+CombineBinding provides `~>` and `~` operators for data binding using Combine, to replace the `sink(receiveValue:)` and `store(in:)` method in Combine.
 
 ## Example
 
