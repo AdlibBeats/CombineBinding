@@ -8,10 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		3E645A47E831769E87CC65F8 /* Pods_CombineBinding_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 872F6F875E67CA261B29248E /* Pods_CombineBinding_Example.framework */; };
+		49E7981824CBA8F1009E7532 /* TestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49E7981724CBA8F1009E7532 /* TestViewController.swift */; };
+		49E7981924CBA8F1009E7532 /* TestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49E7981724CBA8F1009E7532 /* TestViewController.swift */; };
+		49E7981B24CBA946009E7532 /* TestViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49E7981A24CBA946009E7532 /* TestViewModel.swift */; };
+		49E7981C24CBA946009E7532 /* TestViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49E7981A24CBA946009E7532 /* TestViewModel.swift */; };
 		51F2B655276A5A5EC88421D2 /* Pods_CombineBinding_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E8066F0F6603AEE909062D92 /* Pods_CombineBinding_Tests.framework */; };
 		607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD51AFB9204008FA782 /* AppDelegate.swift */; };
-		607FACD81AFB9204008FA782 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD71AFB9204008FA782 /* ViewController.swift */; };
-		607FACDB1AFB9204008FA782 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 607FACD91AFB9204008FA782 /* Main.storyboard */; };
 		607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDC1AFB9204008FA782 /* Images.xcassets */; };
 		607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDE1AFB9204008FA782 /* LaunchScreen.xib */; };
 		607FACEC1AFB9204008FA782 /* Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACEB1AFB9204008FA782 /* Tests.swift */; };
@@ -30,12 +32,12 @@
 /* Begin PBXFileReference section */
 		10F6B3E6529DC2E8E76D8BEA /* Pods-CombineBinding_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CombineBinding_Example.release.xcconfig"; path = "Target Support Files/Pods-CombineBinding_Example/Pods-CombineBinding_Example.release.xcconfig"; sourceTree = "<group>"; };
 		1C1C6AFA0F6D439A6172B1FE /* Pods-CombineBinding_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CombineBinding_Tests.debug.xcconfig"; path = "Target Support Files/Pods-CombineBinding_Tests/Pods-CombineBinding_Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		4B366288731DDCFED61E69A1 /* CombineBinding.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = CombineBinding.podspec; path = ../CombineBinding.podspec; sourceTree = "<group>"; };
+		49E7981724CBA8F1009E7532 /* TestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestViewController.swift; sourceTree = "<group>"; };
+		49E7981A24CBA946009E7532 /* TestViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestViewModel.swift; sourceTree = "<group>"; };
+		4B366288731DDCFED61E69A1 /* CombineBinding.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = CombineBinding.podspec; path = ../CombineBinding.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		607FACD01AFB9204008FA782 /* CombineBinding_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CombineBinding_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACD41AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACD51AFB9204008FA782 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		607FACD71AFB9204008FA782 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		607FACDA1AFB9204008FA782 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		607FACDC1AFB9204008FA782 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		607FACDF1AFB9204008FA782 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		607FACE51AFB9204008FA782 /* CombineBinding_Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CombineBinding_Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -80,6 +82,15 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
+		49E7981624CBA8C4009E7532 /* MVVM */ = {
+			isa = PBXGroup;
+			children = (
+				49E7981724CBA8F1009E7532 /* TestViewController.swift */,
+				49E7981A24CBA946009E7532 /* TestViewModel.swift */,
+			);
+			name = MVVM;
+			sourceTree = "<group>";
+		};
 		607FACC71AFB9204008FA782 = {
 			isa = PBXGroup;
 			children = (
@@ -104,9 +115,8 @@
 		607FACD21AFB9204008FA782 /* Example for CombineBinding */ = {
 			isa = PBXGroup;
 			children = (
+				49E7981624CBA8C4009E7532 /* MVVM */,
 				607FACD51AFB9204008FA782 /* AppDelegate.swift */,
-				607FACD71AFB9204008FA782 /* ViewController.swift */,
-				607FACD91AFB9204008FA782 /* Main.storyboard */,
 				607FACDC1AFB9204008FA782 /* Images.xcassets */,
 				607FACDE1AFB9204008FA782 /* LaunchScreen.xib */,
 				607FACD31AFB9204008FA782 /* Supporting Files */,
@@ -248,7 +258,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				607FACDB1AFB9204008FA782 /* Main.storyboard in Resources */,
 				607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */,
 				607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */,
 			);
@@ -333,7 +342,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				607FACD81AFB9204008FA782 /* ViewController.swift in Sources */,
+				49E7981824CBA8F1009E7532 /* TestViewController.swift in Sources */,
+				49E7981B24CBA946009E7532 /* TestViewModel.swift in Sources */,
 				607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -342,6 +352,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				49E7981C24CBA946009E7532 /* TestViewModel.swift in Sources */,
+				49E7981924CBA8F1009E7532 /* TestViewController.swift in Sources */,
 				607FACEC1AFB9204008FA782 /* Tests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -357,14 +369,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		607FACD91AFB9204008FA782 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				607FACDA1AFB9204008FA782 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		607FACDE1AFB9204008FA782 /* LaunchScreen.xib */ = {
 			isa = PBXVariantGroup;
 			children = (
