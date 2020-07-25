@@ -5,13 +5,23 @@
 [![License](https://img.shields.io/cocoapods/l/CombineBinding.svg?style=flat)](https://cocoapods.org/pods/CombineBinding)
 [![Platform](https://img.shields.io/cocoapods/p/CombineBinding.svg?style=flat)](https://cocoapods.org/pods/CombineBinding)
 
+CombineBinding provides `~>` and `~` operators for data binding using Combine, to replace the `sink(receiveValue:)` and `store(in:)` method in RxSwift.
+
 ## Example
 
 To run the example project, clone the repo, and run `pod install` from the Example directory first.
 
 ## Usage
 
-Sooner or later we had to know for sure
+```Swift
+output.navBarTitle.sink(receiveValue: cb.title).store(in: &subscriptions)
+```
+
+With the operators `~>` (`sink(receiveValue:`) and `~` (`store(in:)`) in CombineBinding, we can bind with the following simple code.
+
+```Swift
+output.navBarTitle ~> cb.title ~ subscriptions
+```
 
 ## Requirements
 
