@@ -18,21 +18,15 @@ public struct Combine<Base> {
 public protocol CombineCompatible {
     associatedtype CombineBase
     
-    static var cb: Combine<CombineBase>.Type { get set }
+    static var cb: Combine<CombineBase>.Type { get }
 
-    var cb: Combine<CombineBase> { get set }
+    var cb: Combine<CombineBase> { get }
 }
 
 public extension CombineCompatible {
-    static var cb: Combine<Self>.Type {
-        get { Combine<Self>.self }
-        set { }
-    }
+    static var cb: Combine<Self>.Type { Combine<Self>.self }
     
-    var cb: Combine<Self> {
-        get { Combine(self) }
-        set { }
-    }
+    var cb: Combine<Self> { Combine(self) }
 }
 
 import class Foundation.NSObject
@@ -43,6 +37,17 @@ public extension Combine where Base: UIViewController {
     var title: ((String?) -> Void) { { [weak base] in base?.title = $0 } }
 }
 
+public extension Combine where Base: UIButton {
+    func setTitle(for state: UIControl.State) -> ((String?) -> Void) { { [weak base] in base?.setTitle($0, for: state) } }
+}
+
 public extension Combine where Base: UILabel {
     var text: ((String?) -> Void) { { [weak base] in base?.text = $0 } }
+}
+
+public extension Combine where Base: UIDatePicker {
+    var date: ((Date) -> Void) { { [weak base] in base?.date = $0 } }
+    var minimumDate: ((Date?) -> Void) { { [weak base] in base?.minimumDate = $0 } }
+    var maximumDate: ((Date?) -> Void) { { [weak base] in base?.maximumDate = $0 } }
+    func setDate(animated: Bool) -> ((Date) -> Void) { { [weak base] in base?.setDate($0, animated: animated) } }
 }
