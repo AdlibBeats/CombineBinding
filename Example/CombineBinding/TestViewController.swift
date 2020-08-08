@@ -34,7 +34,7 @@ final class TestViewController: UIViewController {
         
         func bind() {
             let output = viewModel.transform(.init())
-            UIButton().setBackgroundImage(<#T##image: UIImage?##UIImage?#>, for: <#T##UIControl.State#>)
+            
             output.navBarTitle ~> cb.title ~ subscriptions
         }
         

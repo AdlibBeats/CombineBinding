@@ -91,6 +91,16 @@ public extension Combine where Base: UIControl {
 
 public extension Combine where Base: UIView {
     var isHidden: ((Bool) -> Void) { { [weak base] in base?.isHidden = $0 } }
+    var isOpaque: ((Bool) -> Void) { { [weak base] in base?.isOpaque = $0 } }
+    var clearsContextBeforeDrawing: ((Bool) -> Void) { { [weak base] in base?.isHidden = $0 } }
+    var contentMode: ((UIView.ContentMode) -> Void) { { [weak base] in base?.contentMode = $0 } }
     var backgroundColor: ((UIColor?) -> Void) { { [weak base] in base?.backgroundColor = $0 } }
     var tintColor: ((UIColor?) -> Void) { { [weak base] in base?.tintColor = $0 } }
+}
+
+public extension Combine where Base: UIStackView {
+    var axis: ((NSLayoutConstraint.Axis) -> Void) { { [weak base] in base?.axis = $0 } }
+    var distribution: ((UIStackView.Distribution) -> Void) { { [weak base] in base?.distribution = $0 } }
+    var alignment: ((UIStackView.Alignment) -> Void) { { [weak base] in base?.alignment = $0 } }
+    var spacing: ((CGFloat) -> Void) { { [weak base] in base?.spacing = $0 } }
 }
